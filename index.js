@@ -12,6 +12,7 @@ function randChar() {
 }
 
 function generate() {
+    console.log("generate function called")
     let newPass1 = ''
     for (let i = 0; i < newPassLength; i++) {
         newPass1 += randChar()
@@ -23,6 +24,8 @@ function generate() {
         newPass2 += randChar()
     }
     result2.textContent = newPass2
+    console.log('hello world')
 }
 
+document.getElementById("generate-btn").addEventListener('click', generate)
 
